@@ -1,0 +1,357 @@
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Segoe UI", sans-serif;
+}
+
+body {
+    background: #F8FBFF;
+    color: #18324D;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* DETALHES DE NEBULOSA (Com pointer-events para não bloquear cliques) */
+body::before {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    background: #DCECFB;
+    border-radius: 50%;
+    filter: blur(90px);
+    top: 40px;
+    right: -150px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background: rgba(214, 184, 106, 0.18);
+    border-radius: 50%;
+    filter: blur(80px);
+    left: -120px;
+    top: 550px;
+    z-index: -1;
+    pointer-events: none;
+}
+
+/* HEADER */
+header {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0; /* Reduzido de 30px */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    width: 120px; /* Leve ajuste proporcional */
+    display: block;
+}
+
+nav {
+    display: flex;
+    gap: 25px; /* Reduzido de 35px para aproximar os links */
+}
+
+nav a {
+    text-decoration: none;
+    color: #18324D;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #D6B86A;
+    bottom: -6px;
+    left: 0;
+    transition: 0.3s;
+}
+
+nav a:hover::after,
+nav a.ativo::after {
+    width: 100%;
+}
+
+/* CONTAINER PRINCIPAL */
+main {
+    width: 85%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* SEÇÕES (Espaçamento corrigido) */
+section {
+    margin: 55px 0; /* Reduzido de 100px para 55px (elimina os buracos no index) */
+}
+
+/* HERO */
+.hero {
+    padding: 40px 0 20px 0; /* Substituído o 80vh por padding proporcional */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.hero-texto {
+    max-width: 600px;
+}
+
+.hero-texto span,
+.pagina span {
+    color: #B39145;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 52px; /* Reduzido de 70px para equilibrar melhor o cabeçalho */
+    font-weight: 600;
+    color: #18324D;
+    margin: 10px 0 15px 0; /* Margem ajustada */
+    line-height: 1.15;
+}
+
+.hero-texto h2 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #2F5E8F;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 32px; /* Reduzido de 38px */
+    color: #18324D;
+    margin-bottom: 18px;
+}
+
+h3 {
+    color: #2F5E8F;
+    margin-bottom: 12px;
+}
+
+p {
+    line-height: 1.6; /* Reduzido de 1.8 para deixar o texto mais compacto */
+    color: #53677A;
+    font-size: 15px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 25px; /* Reduzido de 35px */
+    padding: 12px 30px;
+    border-radius: 40px;
+    background: #18324D;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background: #D6B86A;
+    color: #18324D;
+}
+
+/* BLOCOS E CARDS */
+.card,
+.hero-card,
+.box,
+.fase,
+.ods-card,
+.membro,
+.instagram-box,
+.qr-code {
+    background: white;
+    border-radius: 20px;
+    padding: 28px; /* Reduzido de 35px para cartões mais compactos */
+    box-shadow: 0 10px 30px rgba(24, 50, 77, 0.06);
+    border: 1px solid #E7EEF5;
+}
+
+.hero-card {
+    width: 320px;
+    border-top: 4px solid #D6B86A;
+}
+
+/* GRIDS (MISSÃO, VISÃO, VALORES, EQUIPE) */
+.cards,
+.cards-temas,
+.integrantes,
+.fases {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px; /* Reduzido de 30px */
+}
+
+.card {
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #D6B86A;
+}
+
+/* SOBRE */
+.autora {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+/* Container circular da foto */
+.foto {
+    width: 220px;
+    height: 220px;
+    flex-shrink: 0; /* Evita que o círculo esmague em telas menores */
+    border-radius: 50%;
+    border: 3px solid #D6B86A;
+    background: #EDF5FC;
+    overflow: hidden; /* Corta a imagem exatamente no formato circular */
+    box-shadow: 0 10px 25px rgba(24, 50, 77, 0.1);
+}
+
+/* Imagem dentro do círculo */
+.foto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a foto preencha o círculo sem esticar */
+    object-position: center top; /* Foca na parte superior/rosto da foto */
+    display: block;
+}
+
+/* PROJETO */
+.problema {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+/* GAMIFICAÇÃO */
+.fase {
+    border-left: 4px solid #D6B86A;
+}
+
+/* EQUIPE */
+.foto-membro {
+    height: 140px;
+    background: #EDF5FC;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #B39145;
+    margin-bottom: 16px;
+}
+
+/* --- CONTATO (INSTAGRAM + QR CODE) --- */
+
+.instagram {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* Deixa os dois cards com a mesma altura */
+    gap: 30px;
+}
+
+.instagram-box,
+.qr-code {
+    flex: 1;               /* Garante a mesma largura para os dois cards */
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;   /* Centraliza tudo na horizontal */
+    justify-content: center; /* Centraliza tudo na vertical */
+    text-align: center;    /* Centraliza os textos */
+}
+
+.qr {
+    width: 170px;
+    height: 170px;
+    background: #18324D;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.qr img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 30px;
+    margin-top: 50px; /* Reduzido de 80px */
+    color: #53677A;
+    border-top: 1px solid #E7EEF5;
+    font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media(max-width: 900px) {
+    section {
+        margin: 40px 0; /* Ainda mais compacto no celular */
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+
+    .hero,
+    .autora,
+    .instagram {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .cards,
+    .cards-temas,
+    .integrantes,
+    .fases,
+    .problema {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-card {
+        width: 100%;
+    }
+}
