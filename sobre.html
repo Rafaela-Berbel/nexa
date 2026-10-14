@@ -1,98 +1,489 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXA | Sobre a Obra</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Análise literária e portal cultural de Nebulosas (1872), de Narcisa Amália: Romantismo em três tempos, vozes do eu lírico, figuras de linguagem e paralelos históricos para vestibulares."
+    />
+    <title>Nexa | A Obra — Nebulosas (1872)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
     <header>
-        <div class="logo">
-            <img src="imagens/logo.jpeg" alt="Logo NEXA">
-        </div>
-
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html" class="ativo">Sobre</a>
-            <a href="projeto.html">Projeto</a>
-            <a href="experiencia.html">Experiência</a>
-            <a href="equipe.html">Equipe</a>
-            <a href="contato.html">Contato</a>
-        </nav>
+      <div class="logo">
+        <a href="index.html"><img src="imagens/logo.jpeg" alt="Logo NEXA" /></a>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html" class="ativo" aria-current="page">A Obra</a>
+        <a href="projeto.html">A Startup</a>
+        <a href="experiencia.html">O Game</a>
+        <a href="vestibular.html">Vestibular</a>
+        <a href="equipe.html">Quem Somos</a>
+        <a href="contato.html">Comunidade</a>
+      </nav>
     </header>
 
-    <main>
+    <main id="conteudo">
+      <!-- HERO DA PÁGINA -->
+      <section class="pagina">
+        <span>Patrimônio Literário & Análise Crítica</span>
+        <h1>Nebulosas (1872) — Narcisa Amália</h1>
+        <p>
+          Publicado em plena segunda metade do século XIX,
+          <strong>Nebulosas</strong> é o livro de estreia e única coletânea
+          poética lançada em vida por Narcisa Amália. A obra reúne lirismo
+          sentimental, sensibilidade com a natureza e uma pioneira postura de
+          crítica social e defesa da emancipação feminina.
+        </p>
+      </section>
 
-        <section class="pagina">
-            <span>Literatura e história</span>
-            <h1>Sobre a obra Nebulosas</h1>
-            <p>
-                Publicado em 1872, o livro <strong>Nebulosas</strong> reúne poemas de Narcisa Amália, uma das importantes vozes femininas da literatura brasileira do século XIX.
-            </p>
-            <p>
-                A obra apresenta uma escrita marcada por sensibilidade, crítica social e reflexão sobre temas que continuam presentes na sociedade atual.
-            </p>
-        </section>
+      <!-- BIOGRAFIA DA AUTORA -->
+      <section class="autora">
+        <div class="imagem-autora">
+          <div class="foto">
+            <img
+              src="imagens/narcis.avif"
+              alt="Retrato histórico de Narcisa Amália"
+            />
+          </div>
+        </div>
+        <div class="texto-autora">
+          <h2>Quem foi Narcisa Amália?</h2>
+          <p>
+            Narcisa Amália de Campos (1852 – 1924) foi poeta, tradutora,
+            contista e jornalista. Atuando na imprensa em uma época em que o
+            meio intelectual era predominantemente masculino, ela utilizou sua
+            pena para defender o direito das mulheres à educação, à autonomia
+            intelectual e à participação ativa na sociedade.
+          </p>
+          <p style="margin-top: 10px">
+            Aos vinte anos de idade, publicou <em>Nebulosas</em>, obra aclamada
+            por nomes como Machado de Assis e D. Pedro II, tornando-se uma
+            figura de vanguarda na literatura brasileira.
+          </p>
+        </div>
+      </section>
 
-        <section class="autora">
-            <div class="imagem-autora">
-                <div class="foto">
-                    
-                    <img src="imagens/narcis.avif" alt="">
-                </div>
+      <!-- FICHA TÉCNICA -->
+      <section class="ficha-obra">
+        <h2>Ficha Técnica & Estrutura</h2>
+        <div class="box box-ouro">
+          <dl
+            class="ficha"
+            style="
+              display: grid;
+              grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+              gap: 20px;
+            "
+          >
+            <div>
+              <dt style="font-weight: 600; color: #b39145">Título Oficial</dt>
+              <dd style="color: #18324d; margin-top: 4px">Nebulosas</dd>
             </div>
-
-            <div class="texto-autora">
-                <h2>Quem foi Narcisa Amália?</h2>
-                <p>
-                    Narcisa Amália de Campos foi uma poeta, jornalista e professora brasileira. Em uma época em que poucas mulheres tinham espaço no meio intelectual, ela utilizou sua escrita para defender a educação, a liberdade e a participação feminina na sociedade.
-                </p>
+            <div>
+              <dt style="font-weight: 600; color: #b39145">Autoria</dt>
+              <dd style="color: #18324d; margin-top: 4px">
+                Narcisa Amália de Campos
+              </dd>
             </div>
-        </section>
-
-        <section class="temas">
-            <h2>Temas presentes na obra</h2>
-
-            <div class="cards-temas">
-                <div class="card">
-                    <h3>✨ Liberdade</h3>
-                    <p>Reflexões sobre autonomia, direitos e transformação social.</p>
-                </div>
-
-                <div class="card">
-                    <h3>🌱 Natureza</h3>
-                    <p>A relação entre humanidade, sentimentos e o mundo natural.</p>
-                </div>
-
-                <div class="card">
-                    <h3>⚖ Justiça</h3>
-                    <p>Questionamentos sobre desigualdade e valores sociais.</p>
-                </div>
-
-                <div class="card">
-                    <h3>♀ Protagonismo feminino</h3>
-                    <p>A importância da voz das mulheres na cultura e na sociedade.</p>
-                </div>
+            <div>
+              <dt style="font-weight: 600; color: #b39145">
+                Ano de Publicação
+              </dt>
+              <dd style="color: #18324d; margin-top: 4px">
+                1872 (Rio de Janeiro / Livraria Garnier)
+              </dd>
             </div>
-        </section>
+            <div>
+              <dt style="font-weight: 600; color: #b39145">Gênero Literário</dt>
+              <dd style="color: #18324d; margin-top: 4px">Lírico (Poesia)</dd>
+            </div>
+            <div>
+              <dt style="font-weight: 600; color: #b39145">Composição</dt>
+              <dd style="color: #18324d; margin-top: 4px">
+                Poema de abertura + 3 partes (44 poemas no total)
+              </dd>
+            </div>
+            <div>
+              <dt style="font-weight: 600; color: #b39145">Origem do Nome</dt>
+              <dd style="color: #18324d; margin-top: 4px">
+                Inspirado em publicações astronômicas francesas do século XIX
+              </dd>
+            </div>
+          </dl>
+        </div>
+      </section>
 
-        <section class="conexao box">
-            <h2>Por que essa obra ainda importa?</h2>
+      <!-- TEMAS CENTRAIS -->
+      <section class="temas">
+        <h2>Eixos Temáticos da Obra</h2>
+        <div class="cards-temas">
+          <article class="card">
+            <h3>✨ Emancipação & Liberdade</h3>
             <p>
-                Mesmo escrita há mais de um século, <strong>Nebulosas</strong> apresenta discussões que continuam atuais. O projeto NEXA busca mostrar que a literatura pode ser uma ferramenta para compreender o presente e criar novas possibilidades para o futuro.
+              Reflexões profundas sobre autonomia, busca por direitos e a força
+              da mente diante de amarras sociais.
             </p>
-        </section>
+          </article>
+          <article class="card">
+            <h3>🌱 Natureza & Cosmovisão</h3>
+            <p>
+              A comunhão entre a alma humana, os fenômenos naturais e a
+              grandiosidade do universo como refúgio espiritual.
+            </p>
+          </article>
+          <article class="card">
+            <h3>⚖ Justiça & Abolicionismo</h3>
+            <p>
+              Denúncias contundentes contra a escravidão e questionamentos sobre
+              a desigualdade social do Império.
+            </p>
+          </article>
+          <article class="card">
+            <h3>♀ Protagonismo Feminino</h3>
+            <p>
+              A afirmação da mulher como sujeito pensante, intelectual e
+              participante da vida cultural e política do país.
+            </p>
+          </article>
+        </div>
+      </section>
 
+      <!-- MOVIMENTO LITERÁRIO -->
+      <section id="movimento">
+        <h2>Movimento Literário: O Romantismo em Três Tempos</h2>
+        <p class="intro-secao">
+          A crítica acadêmica destaca que <em>Nebulosas</em> pertence ao
+          <strong>Romantismo brasileiro</strong>, apresentando uma
+          característica rara: a reunião dos elementos das três gerações
+          românticas em um mesmo livro.
+        </p>
+
+        <div class="fases" style="margin-top: 24px">
+          <div class="fase">
+            <h3>1ª Geração: Afeto & Pátria</h3>
+            <p>
+              Exaltação da natureza tropical, saudades da infância e afeto
+              familiar. No poema <em>"Voto"</em>, a autora utiliza imagens de
+              vento e palmeiras para prestar homenagem filial.
+            </p>
+          </div>
+          <div class="fase">
+            <h3>2ª Geração: Ultrarromantismo</h3>
+            <p>
+              Lirismo intimista, melancolia e o "mal do século". Poemas como
+              <em>"Desalento"</em> e <em>"Agonia"</em> exploram a desilusão
+              amorosa e a busca de alívio na contemplação da dor.
+            </p>
+          </div>
+          <div class="fase">
+            <h3>3ª Geração: Poesia Condoreira</h3>
+            <p>
+              Engajamento político, oratória vibrante e defesa de causas
+              sociais. Poemas como <em>"Pesadelo"</em> denunciam a violência do
+              sistema escravista do século XIX.
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="box"
+          style="
+            margin-top: 24px;
+            background: #edf5fc;
+            border-left: 4px solid #18324d;
+          "
+        >
+          <h3>Diálogo com o Parnasianismo e Realismo</h3>
+          <p>
+            Embora publicada antes do marco inicial do Realismo (1881) e do
+            Parnasianismo (1882) no Brasil, a obra antecipa a busca de rigor
+            formal e vocabulário erudito (característica parnasiana) e o olhar
+            atento e crítico para as contradições sociais (marca do Realismo).
+          </p>
+        </div>
+      </section>
+
+      <!-- AS VOZES POÉTICAS -->
+      <section id="vozes">
+        <h2>As Vozes do Sujeito Poético</h2>
+        <p class="intro-secao">
+          O eu lírico em <em>Nebulosas</em> assume diferentes matizes ao longo
+          da obra, construindo uma rica experiência poética em primeira pessoa:
+        </p>
+
+        <div
+          class="cards"
+          style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))"
+        >
+          <article class="card">
+            <h3>Voz Contemplativa</h3>
+            <p>
+              Observa as nebulosas e o cosmos como espelho da elevação
+              espiritual, afastando o espírito da dor terrestre.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Voz Filial & Afetiva</h3>
+            <p>
+              Expressa sentimentos de amor, oração e proteção dedicada à figura
+              materna no poema <em>"Voto"</em>.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Voz Melancólica & Saudosa</h3>
+            <p>
+              Lamenta a passagem do tempo, a inocência perdida e o
+              distanciamento da terra natal em <em>"Saudades"</em>.
+            </p>
+          </article>
+          <article class="card">
+            <h3>Voz Cívica & Combativa</h3>
+            <p>
+              Abandona o lirismo íntimo para denunciar opressões e conclamar o
+              público para a transformação social.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- FIGURAS DE LINGUAGEM COM VERSOS AUTÊNTICOS -->
+      <section id="linguagem">
+        <h2>Análise Estilística & Figuras de Linguagem</h2>
+        <p class="intro-secao">
+          A linguagem poética de Narcisa Amália destaca-se pela expressividade
+          emotiva e riqueza de imagens visuais. Veja trechos reais analisados:
+        </p>
+
+        <div
+          class="cards"
+          style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"
+        >
+          <article class="card">
+            <h3>Metáfora Cosmicista</h3>
+            <p>
+              As formações celestes são comparadas à própria obra da criação e à
+              elevação da alma:
+            </p>
+            <blockquote
+              style="
+                background: #edf5fc;
+                border-left: 3px solid #d6b86a;
+                padding: 10px 15px;
+                margin-top: 10px;
+                font-style: italic;
+                color: #18324d;
+              "
+            >
+              “Sim! São elas a mais gentil feitura<br />Que das mãos do Senhor
+              há resvalado!”
+              <small
+                style="
+                  display: block;
+                  margin-top: 5px;
+                  color: #b39145;
+                  font-weight: 600;
+                "
+                >— Poema "Nebulosas"</small
+              >
+            </blockquote>
+          </article>
+
+          <article class="card">
+            <h3>Personificação (Prosopopeia)</h3>
+            <p>
+              Atribui sensações e ações humanas a elementos abstratos como o
+              "mundo":
+            </p>
+            <blockquote
+              style="
+                background: #edf5fc;
+                border-left: 3px solid #d6b86a;
+                padding: 10px 15px;
+                margin-top: 10px;
+                font-style: italic;
+                color: #18324d;
+              "
+            >
+              “O mundo que me vê passar sem um sorriso,<br />Não vê do meu
+              tormento horrendo vendaval!”
+              <small
+                style="
+                  display: block;
+                  margin-top: 5px;
+                  color: #b39145;
+                  font-weight: 600;
+                "
+                >— Poema "Amargura"</small
+              >
+            </blockquote>
+          </article>
+
+          <article class="card">
+            <h3>Apóstrofe & Invocação</h3>
+            <p>
+              O eu lírico se dirige diretamente aos elementos da natureza
+              pedindo libertação:
+            </p>
+            <blockquote
+              style="
+                background: #edf5fc;
+                border-left: 3px solid #d6b86a;
+                padding: 10px 15px;
+                margin-top: 10px;
+                font-style: italic;
+                color: #18324d;
+              "
+            >
+              “Ó brisa, me transporta às plagas cérulas!”
+              <small
+                style="
+                  display: block;
+                  margin-top: 5px;
+                  color: #b39145;
+                  font-weight: 600;
+                "
+                >— Poema "Fragmentos"</small
+              >
+            </blockquote>
+          </article>
+        </div>
+      </section>
+
+      <!-- TABELA COMPARATIVA HISTÓRICA -->
+      <section id="comparativo">
+        <h2>Análise Comparativa: Século XIX vs. Século XXI</h2>
+        <p class="intro-secao">
+          A leitura de <em>Nebulosas</em> ganha força ao ser confrontada com os
+          indicadores atuais. O paralelos abaixo fundamentam a relevância da
+          obra para redações e provas de Humanas:
+        </p>
+
+        <div class="tabela-wrap" style="overflow-x: auto; margin-top: 20px">
+          <table
+            class="tabela"
+            style="
+              width: 100%;
+              border-collapse: collapse;
+              background: white;
+              border-radius: 12px;
+              overflow: hidden;
+              box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+            "
+          >
+            <thead>
+              <tr style="background: #18324d; color: white">
+                <th style="padding: 15px; text-align: left">Eixo de Análise</th>
+                <th style="padding: 15px; text-align: left">
+                  Cenário em 1872 (Brasil Império)
+                </th>
+                <th style="padding: 15px; text-align: left">
+                  Cenário Atual (Século XXI)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom: 1px solid #e7eef5">
+                <td style="padding: 15px; font-weight: 600; color: #b39145">
+                  Educação & Leitura
+                </td>
+                <td style="padding: 15px; color: #53677a">
+                  82% de analfabetismo (Censo de 1872). A leitura feminina era
+                  desencorajada e restrita ao ambiente doméstico.
+                </td>
+                <td style="padding: 15px; color: #53677a">
+                  Apesar do acesso escolar, 53% dos brasileiros são não-leitores
+                  (Retratos da Leitura 2024), mantendo a leitura como desafio
+                  nacional.
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e7eef5">
+                <td style="padding: 15px; font-weight: 600; color: #b39145">
+                  Voz & Espaço Público
+                </td>
+                <td style="padding: 15px; color: #53677a">
+                  Mulheres não possuíam direito ao voto nem acesso pleno às
+                  faculdades. Narcisa usou a imprensa como trincheira.
+                </td>
+                <td style="padding: 15px; color: #53677a">
+                  Avanço de direitos garantidos, mas persistência de lacunas
+                  como a sobrecarga de afazeres (21,3h/sem das mulheres vs 11,7h
+                  dos homens — IBGE).
+                </td>
+              </tr>
+              <tr style="border-bottom: 1px solid #e7eef5">
+                <td style="padding: 15px; font-weight: 600; color: #b39145">
+                  Luta Anti-Opressão
+                </td>
+                <td style="padding: 15px; color: #53677a">
+                  Vigência do regime escravista com mais de 1,5 milhão de
+                  escravizados. A autora produziu poesia condoreira
+                  abolicionista.
+                </td>
+                <td style="padding: 15px; color: #53677a">
+                  Fim da escravidão legal, contudo permanece o desafio do
+                  combate ao racismo estrutural e às desigualdades sociais.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- CALL TO ACTION DE CONTINUIDADE -->
+      <section
+        class="box"
+        style="
+          text-align: center;
+          background: white;
+          padding: 40px;
+          margin-top: 40px;
+        "
+      >
+        <h2>Pronto para fixar esses conteúdos?</h2>
+        <p style="max-width: 600px; margin: 10px auto 20px auto">
+          Entre na arena interativa da NEXA para responder desafios gamificados
+          sobre os poemas de Narcisa Amália ou faça nosso simulado inédito.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a href="experiencia.html" class="botao">Jogar Módulo de Nebulosas</a>
+          <a
+            href="vestibular.html"
+            class="botao"
+            style="
+              background: transparent;
+              color: #18324d;
+              border: 2px solid #18324d;
+            "
+            >Acessar Simulados & Redação</a
+          >
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>NEXA | Projeto Nebulosas</p>
+      <p>
+        &copy; 2026 NEXA — Plataforma de Leitura Gamificada. Todos os direitos
+        reservados.
+      </p>
     </footer>
-
-</body>
-
+  </body>
 </html>

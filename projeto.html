@@ -1,140 +1,563 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXA | O Projeto</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A Startup NEXA: Conheça nossa missão de impactar a educação brasileira através da tecnologia, alinhada aos ODS 4 (Educação de Qualidade) e ODS 5 (Igualdade de Gênero) da ONU."
+    />
+    <title>Nexa | A Startup & Impacto Social</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
     <header>
-        <div class="logo">
-            <img src="imagens/logo.jpeg" alt="Logo NEXA">
-        </div>
-
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="projeto.html" class="ativo">Projeto</a>
-            <a href="experiencia.html">Experiência</a>
-            <a href="equipe.html">Equipe</a>
-            <a href="contato.html">Contato</a>
-        </nav>
+      <div class="logo">
+        <a href="index.html"><img src="imagens/logo.jpeg" alt="Logo NEXA" /></a>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">A Obra</a>
+        <a href="projeto.html" class="ativo" aria-current="page">A Startup</a>
+        <a href="experiencia.html">O Game</a>
+        <a href="vestibular.html">Vestibular</a>
+        <a href="equipe.html">Quem Somos</a>
+        <a href="contato.html">Comunidade</a>
+      </nav>
     </header>
 
-    <main>
+    <main id="conteudo">
+      <!-- HERO DA PÁGINA -->
+      <section class="pagina">
+        <span>EdTech com Propósito Social</span>
+        <h1>Tecnologia para Reconectar Leitores aos Clássicos</h1>
+        <p>
+          A NEXA nasceu com uma missão clara: transformar a maneira como os
+          jovens interagem com a literatura clássica brasileira, substituindo a
+          leitura passiva por uma experiência digital, interativa e de alta
+          relevância para os exames nacionais.
+        </p>
+      </section>
 
-        <!-- CABEÇALHO DA PÁGINA -->
-        <section class="pagina">
-            <span>Briefing do projeto</span>
-            <h1>A proposta da NEXA</h1>
+      <!-- PRINCÍPIOS FUNDAMENTAIS -->
+      <section class="principios">
+        <h2>Nossos Princípios</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>🎯 Missão</h3>
             <p>
-                O projeto Nebulosas nasce com o objetivo de aproximar jovens da literatura brasileira por meio de uma experiência digital, interativa e educativa.
+              Unir literatura clássica brasileira, tecnologia web e gamificação
+              para transformar a aprendizagem em uma jornada envolvente,
+              acessível e focada nos vestibulares.
             </p>
+          </article>
+          <article class="card">
+            <h3>👁️ Visão</h3>
             <p>
-                Através da obra de Narcisa Amália, buscamos criar uma conexão entre cultura, tecnologia e reflexão social.
+              Ser a principal plataforma EdTech de literatura protagonizada pela
+              juventude, conectando preservação cultural, inovação digital e
+              impacto social escalável.
             </p>
-        </section>
+          </article>
+          <article class="card">
+            <h3>💎 Valores</h3>
+            <p>
+              Protagonismo jovem, valorização do patrimônio literário nacional,
+              rigor pedagógico, equidade de gênero e tecnologia a serviço da
+              transformação educacional.
+            </p>
+          </article>
+        </div>
+      </section>
 
-        <!-- MISSÃO, VISÃO E VALORES (Adicionado) -->
-        <section class="principios">
-            <h2>Nossos Princípios</h2>
-            
-            <div class="cards">
-                <div class="card">
-                    <h3>🎯 Missão</h3>
-                    <p>
-                        Unir literatura clássica brasileira, tecnologia e gamificação para transformar o aprendizado em uma experiência envolvente e acessível.
-                    </p>
-                </div>
+      <!-- O PROBLEMA E A OPORTUNIDADE -->
+      <section class="problema">
+        <div class="box">
+          <h2>O Desafio Educacional</h2>
+          <p>
+            Grande parte dos estudantes brasileiros enxerga as obras
+            obrigatórias dos vestibulares como um obstáculo distante e
+            ultrapassado. Métodos tradicionais falham em conectar o contexto de
+            publicação com as discussões contemporâneas, resultando em
+            desinteresse e baixos índices de interpretação leitora.
+          </p>
+        </div>
+        <div class="box">
+          <h2>Nossa Oportunidade de Impacto</h2>
+          <p>
+            Utilizar recursos da cultura digital (gamificação, design de
+            interação e pílulas de conteúdo multimídia) para construir uma ponte
+            direta entre a juventude e os grandes autores nacionais, devolvendo
+            o protagonismo aos estudantes.
+          </p>
+        </div>
+      </section>
 
-                <div class="card">
-                    <h3>👁️ Visão</h3>
-                    <p>
-                        Ser referência em iniciativas educacionais protagonizadas por jovens, conectando cultura, inovação e impacto social.
-                    </p>
-                </div>
+      <!-- ======================= ODS E JUSTIFICATIVA DE MERCADO ======================= -->
+      <section id="ods">
+        <h2>Embasamento Científico & Alinhamento com a Agenda 2030 (ONU)</h2>
+        <p class="intro-secao">
+          A proposta de valor da EdTech NEXA atua diretamente sobre problemas
+          estruturais identificados em diagnósticos nacionais oficiais,
+          alinhando-se aos Objetivos de Desenvolvimento Sustentável 4 e 5 da
+          ONU.
+        </p>
 
-                <div class="card">
-                    <h3>💎 Valores</h3>
-                    <p>
-                        Protagonismo juvenil, valorização da cultura nacional, inclusão social, inovação com propósito e paixão pelo conhecimento.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- PROBLEMA E OPORTUNIDADE -->
-        <section class="problema">
-            <div class="box">
-                <h2>O problema</h2>
-                <p>
-                    Muitas obras clássicas da literatura são apresentadas aos estudantes apenas de forma tradicional, fazendo com que parte dos jovens não perceba sua relevância no mundo atual.
+        <div
+          class="ods-grid"
+          style="display: flex; flex-direction: column; gap: 30px"
+        >
+          <!-- ODS 4 -->
+          <article class="card" style="border-left: 6px solid #c5192d">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 15px;
+              "
+            >
+              <div
+                style="
+                  background: #c5192d;
+                  color: white;
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 10px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: bold;
+                "
+              >
+                <span style="font-size: 20px; line-height: 1">4</span>
+                <span style="font-size: 9px; text-transform: uppercase"
+                  >ODS</span
+                >
+              </div>
+              <div>
+                <h3 style="margin: 0; color: #18324d">
+                  ODS 4 — Educação de Qualidade
+                </h3>
+                <p style="font-size: 13px; color: #b39145; margin: 0">
+                  Meta 4.1: Garantir aprendizagem relevante e eficaz para jovens
+                  do Ensino Médio.
                 </p>
+              </div>
             </div>
 
-            <div class="box">
-                <h2>A oportunidade</h2>
-                <p>
-                    Utilizar ferramentas digitais e métodos interativos para transformar a leitura em uma experiência mais próxima, dinâmica e significativa.
+            <!-- Dados Reais Oficiais -->
+            <div
+              class="cards"
+              style="
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 15px;
+                margin: 15px 0;
+              "
+            >
+              <div
+                style="
+                  background: #edf5fc;
+                  padding: 15px;
+                  border-radius: 12px;
+                  border: 1px solid #d3e4f5;
+                "
+              >
+                <strong style="font-size: 24px; color: #18324d">53%</strong>
+                <p style="font-size: 13px; margin-top: 5px; color: #53677a">
+                  dos brasileiros são não-leitores (não leram nem trecho de
+                  livro nos últimos 3 meses).
                 </p>
+                <small
+                  style="
+                    display: block;
+                    margin-top: 6px;
+                    font-size: 11px;
+                    color: #2f5e8f;
+                    font-weight: 600;
+                  "
+                  >Fonte: IPL (Retratos da Leitura, 6ª ed., 2024)</small
+                >
+              </div>
+
+              <div
+                style="
+                  background: #edf5fc;
+                  padding: 15px;
+                  border-radius: 12px;
+                  border: 1px solid #d3e4f5;
+                "
+              >
+                <strong style="font-size: 24px; color: #18324d">410 pts</strong>
+                <p style="font-size: 13px; margin-top: 5px; color: #53677a">
+                  pontuação média do Brasil em Leitura no PISA (abaixo dos 476
+                  pts da OCDE); 50% abaixo do nível básico.
+                </p>
+                <small
+                  style="
+                    display: block;
+                    margin-top: 6px;
+                    font-size: 11px;
+                    color: #2f5e8f;
+                    font-weight: 600;
+                  "
+                  >Fonte: OCDE / INEP (PISA 2022)</small
+                >
+              </div>
+
+              <div
+                style="
+                  background: #edf5fc;
+                  padding: 15px;
+                  border-radius: 12px;
+                  border: 1px solid #d3e4f5;
+                "
+              >
+                <strong style="font-size: 24px; color: #18324d">3,96</strong>
+                <p style="font-size: 13px; margin-top: 5px; color: #53677a">
+                  média anual de livros lidos por habitante no Brasil (queda em
+                  relação a 4,95 em 2019).
+                </p>
+                <small
+                  style="
+                    display: block;
+                    margin-top: 6px;
+                    font-size: 11px;
+                    color: #2f5e8f;
+                    font-weight: 600;
+                  "
+                  >Fonte: IPL (Retratos da Leitura, 2024)</small
+                >
+              </div>
             </div>
-        </section>
 
-        <!-- NOSSA SOLUÇÃO -->
-        <section class="solucao">
-            <h2>Nossa solução</h2>
-            <p style="margin-bottom: 25px;">
-                A NEXA propõe uma plataforma educativa inspirada na obra <strong>Nebulosas</strong>, unindo literatura e tecnologia através de conteúdos informativos, desafios e uma experiência gamificada.
-            </p>
-
-            <div class="cards">
-                <div class="card">
-                    <h3>📚 Literatura</h3>
-                    <p>Apresentar a obra de Narcisa Amália de maneira acessível e conectada com os estudantes.</p>
-                </div>
-
-                <div class="card">
-                    <h3>💻 Tecnologia</h3>
-                    <p>Utilizar recursos digitais para criar uma nova forma de aprendizado.</p>
-                </div>
-
-                <div class="card">
-                    <h3>🌎 Impacto social</h3>
-                    <p>Estimular reflexões sobre igualdade, educação e transformação.</p>
-                </div>
+            <!-- Resposta do Produto NEXA -->
+            <div
+              style="
+                background: #f8fbff;
+                padding: 15px;
+                border-radius: 10px;
+                border-left: 3px solid #18324d;
+                margin-top: 10px;
+              "
+            >
+              <p style="font-size: 14px; color: #18324d; margin: 0">
+                <strong>Solução do Produto NEXA:</strong> Combate o desinteresse
+                pela leitura obrigatória ao transformar a análise literária em
+                módulos gamificados com testes interativos e suporte para
+                vestibulares.
+              </p>
             </div>
-        </section>
+          </article>
 
-        <!-- OBJETIVOS -->
-        <section class="objetivos box">
-            <h2>Objetivos do projeto</h2>
-            <ul class="lista-objetivos">
-                <li>Incentivar o interesse pela literatura brasileira.</li>
-                <li>Valorizar a trajetória de escritoras brasileiras.</li>
-                <li>Desenvolver uma aprendizagem mais interativa.</li>
-                <li>Relacionar literatura com questões sociais atuais.</li>
-                <li>Utilizar a tecnologia como ferramenta educacional.</li>
-            </ul>
-        </section>
+          <!-- ODS 5 -->
+          <article class="card" style="border-left: 6px solid #ff3a21">
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                margin-bottom: 15px;
+              "
+            >
+              <div
+                style="
+                  background: #ff3a21;
+                  color: white;
+                  width: 48px;
+                  height: 48px;
+                  border-radius: 10px;
+                  display: flex;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  font-weight: bold;
+                "
+              >
+                <span style="font-size: 20px; line-height: 1">5</span>
+                <span style="font-size: 9px; text-transform: uppercase"
+                  >ODS</span
+                >
+              </div>
+              <div>
+                <h3 style="margin: 0; color: #18324d">
+                  ODS 5 — Igualdade de Gênero
+                </h3>
+                <p style="font-size: 13px; color: #b39145; margin: 0">
+                  Meta 5.5: Garantir a participação plena da mulher e a
+                  valorização de sua produção intelectual.
+                </p>
+              </div>
+            </div>
 
-        <!-- FRASE FINAL -->
-        <section class="final-projeto frase-final">
-            <h2>De ideias para novas descobertas</h2>
+            <!-- Dados Reais Oficiais -->
+            <div
+              class="cards"
+              style="
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 15px;
+                margin: 15px 0;
+              "
+            >
+              <div
+                style="
+                  background: #edf5fc;
+                  padding: 15px;
+                  border-radius: 12px;
+                  border: 1px solid #d3e4f5;
+                "
+              >
+                <strong style="font-size: 24px; color: #18324d">21,3 h</strong>
+                <p style="font-size: 13px; margin-top: 5px; color: #53677a">
+                  dedicadas por semana pelas mulheres a afazeres domésticos e
+                  cuidados, contra 11,7 h dos homens.
+                </p>
+                <small
+                  style="
+                    display: block;
+                    margin-top: 6px;
+                    font-size: 11px;
+                    color: #2f5e8f;
+                    font-weight: 600;
+                  "
+                  >Fonte: IBGE (Estatísticas de Gênero, 2024)</small
+                >
+              </div>
+
+              <div
+                style="
+                  background: #edf5fc;
+                  padding: 15px;
+                  border-radius: 12px;
+                  border: 1px solid #d3e4f5;
+                "
+              >
+                <strong style="font-size: 24px; color: #18324d">78,9%</strong>
+                <p style="font-size: 13px; margin-top: 5px; color: #53677a">
+                  razão de rendimento médio das mulheres em relação aos homens,
+                  apesar da maior escolaridade feminina.
+                </p>
+                <small
+                  style="
+                    display: block;
+                    margin-top: 6px;
+                    font-size: 11px;
+                    color: #2f5e8f;
+                    font-weight: 600;
+                  "
+                  >Fonte: IBGE (Estatísticas de Gênero, 2024)</small
+                >
+              </div>
+
+              <div
+                style="
+                  background: #edf5fc;
+                  padding: 15px;
+                  border-radius: 12px;
+                  border: 1px solid #d3e4f5;
+                "
+              >
+                <strong style="font-size: 24px; color: #18324d">1872</strong>
+                <p style="font-size: 13px; margin-top: 5px; color: #53677a">
+                  Ano de publicação de <em>Nebulosas</em> por Narcisa Amália,
+                  enfrentando um contexto de 82,3% de analfabetismo.
+                </p>
+                <small
+                  style="
+                    display: block;
+                    margin-top: 6px;
+                    font-size: 11px;
+                    color: #2f5e8f;
+                    font-weight: 600;
+                  "
+                  >Fonte: IBGE Memória (Censo Imperial de 1872)</small
+                >
+              </div>
+            </div>
+
+            <!-- Resposta do Produto NEXA -->
+            <div
+              style="
+                background: #f8fbff;
+                padding: 15px;
+                border-radius: 10px;
+                border-left: 3px solid #18324d;
+                margin-top: 10px;
+              "
+            >
+              <p style="font-size: 14px; color: #18324d; margin: 0">
+                <strong>Solução do Produto NEXA:</strong> Resgata autoras
+                brasileiras historicamente invisibilizadas pelo cânone
+                tradicional e conecta sua produção poética aos debates
+                contemporâneos de equidade.
+              </p>
+            </div>
+          </article>
+        </div>
+
+        <!-- NOTA DE TRANSPARÊNCIA SOBRE MÉTRICAS DA PLATAFORMA -->
+        <div
+          style="
+            margin-top: 25px;
+            padding: 15px 20px;
+            background: #fffcf3;
+            border: 1px solid #d6b86a;
+            border-radius: 12px;
+            font-size: 13px;
+            color: #18324d;
+          "
+        >
+          <strong style="color: #b39145"
+            >📌 Nota Metodológica de Transparência (Projeto Integrador
+            CTI/FEB-UNESP):</strong
+          >
+          <p style="margin-top: 5px; margin-bottom: 0; color: #53677a">
+            Os dados quantitativos apresentados acima são estatísticas reais
+            provenientes do IBGE, Instituto Pró-Livro, OCDE e Censo Histórico de
+            1872. Quaisquer metas numéricas de usuários, retenção ou acessos
+            citados nos módulos de demonstração da plataforma constituem
+            <em
+              >simulações de protótipo e projeções de impacto desenvolvidas pelo
+              grupo NEXA</em
+            >
+            para fins acadêmicos.
+          </p>
+        </div>
+
+        <!-- REFERÊNCIAS BIBLIOGRÁFICAS EM PADRÃO ABNT -->
+        <div
+          class="fontes"
+          style="
+            margin-top: 35px;
+            padding-top: 20px;
+            border-top: 1px solid #e7eef5;
+          "
+        >
+          <h4 style="color: #18324d; margin-bottom: 12px">
+            Referências Bibliográficas das Fontes Consultadas
+          </h4>
+          <ul
+            style="
+              font-size: 12px;
+              color: #53677a;
+              line-height: 1.7;
+              list-style: none;
+            "
+          >
+            <li>
+              INSTITUTO PRÓ-LIVRO (IPL).
+              <strong>Retratos da Leitura no Brasil</strong>. 6. ed. São Paulo:
+              Instituto Pró-Livro, 2024.
+            </li>
+            <li>
+              INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE).
+              <strong
+                >Estatísticas de Gênero: indicadores sociais das mulheres no
+                Brasil</strong
+              >. 3. ed. Rio de Janeiro: IBGE, 2024.
+            </li>
+            <li>
+              INSTITUTO BRASILEIRO DE GEOGRAFIA E ESTATÍSTICA (IBGE).
+              <strong>Recenseamento do Brazil em 1872</strong>. Rio de Janeiro:
+              Typographia do Imperial Instituto Artistico, 1872. Disponível em:
+              IBGE Memória.
+            </li>
+            <li>
+              ORGANIZAÇÃO PARA A COOPERAÇÃO E DESENVOLVIMENTO ECONÔMICO (OCDE);
+              INEP.
+              <strong
+                >O Brasil no PISA 2022: Relatório do Programa Internacional de
+                Avaliação de Alunos</strong
+              >. Brasília: INEP, 2023.
+            </li>
+            <li>
+              FÓRUM BRASILEIRO DE SEGURANÇA PÚBLICA.
+              <strong>Anuário Brasileiro de Segurança Pública</strong>. 20. ed.
+              São Paulo: FBSP, 2026.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ECOSSISTEMA DA SOLUÇÃO -->
+      <section class="solucao">
+        <h2>O Ecossistema da Plataforma NEXA</h2>
+        <p style="margin-bottom: 25px">
+          Nossa arquitetura de aprendizagem combina três pilares interligados
+          para garantir máxima eficiência de estudos:
+        </p>
+        <div class="cards">
+          <article class="card">
+            <h3>📚 Curadoria Literária</h3>
             <p>
-                Assim como uma nebulosa dá origem a novas estrelas, o conhecimento também nasce de novas ideias, conexões e experiências.
+              Análises aprofundadas dos poemas de <em>Nebulosas</em>, contexto
+              do século XIX e mapeamento de figuras de linguagem.
             </p>
-        </section>
+          </article>
+          <article class="card">
+            <h3>🎮 Engine Gamificada</h3>
+            <p>
+              Placar de pontos, combos de acertos, conquistas desbloqueáveis e
+              feedbacks pedagógicos em tempo real.
+            </p>
+          </article>
+          <article class="card">
+            <h3>📝 Matriz de Vestibular</h3>
+            <p>
+              Simulados estilo UNESP/Fuvest e modelos prontos de repertório
+              sociocultural para utilização em redações nota 1000.
+            </p>
+          </article>
+        </div>
+      </section>
 
+      <!-- BANNER DE PARCERIA INSTITUCIONAL -->
+      <section
+        class="box"
+        style="text-align: center; background: white; padding: 40px"
+      >
+        <h2>Quer saber mais sobre nossa metodologia?</h2>
+        <p style="max-width: 600px; margin: 10px auto 20px auto">
+          Inicie sua jornada agora jogando os módulos de <em>Nebulosas</em> ou
+          acesse nosso acervo de vestibulares.
+        </p>
+        <div
+          style="
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+          "
+        >
+          <a href="experiencia.html" class="botao">Acessar o Game Interativo</a>
+          <a
+            href="vestibular.html"
+            class="botao"
+            style="
+              background: transparent;
+              color: #18324d;
+              border: 2px solid #18324d;
+            "
+            >Simulados de Vestibular</a
+          >
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>NEXA | Projeto Nebulosas</p>
+      <p>
+        &copy; 2026 NEXA — Plataforma de Leitura Gamificada. Todos os direitos
+        reservados.
+      </p>
     </footer>
-
-</body>
-
+  </body>
 </html>

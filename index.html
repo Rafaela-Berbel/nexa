@@ -1,99 +1,149 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEXA | Início</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Nexa: A plataforma educacional que transforma o estudo dos clássicos literários em uma jornada gamificada para estudantes e vestibulandos."
+    />
+    <title>Nexa | A Plataforma de Leitura Gamificada</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
     <header>
-        <div class="logo">
-            <img src="imagens/logo.jpeg" alt="Logo NEXA">
-        </div>
-
-        <nav>
-            <a href="index.html" class="ativo">Início</a>
-            <a href="sobre.html">Sobre</a>
-            <a href="projeto.html">Projeto</a>
-            <a href="experiencia.html">Experiência</a>
-            <a href="equipe.html">Equipe</a>
-            <a href="contato.html">Contato</a>
-        </nav>
+      <div class="logo">
+        <a href="index.html"><img src="imagens/logo.jpeg" alt="Logo NEXA" /></a>
+      </div>
+      <nav aria-label="Navegação principal">
+        <a href="index.html" class="ativo" aria-current="page">Início</a>
+        <a href="sobre.html">A Obra</a>
+        <a href="projeto.html">A Startup</a>
+        <a href="experiencia.html">O Game</a>
+        <a href="vestibular.html">Vestibular</a>
+        <a href="equipe.html">Quem Somos</a>
+        <a href="contato.html">Comunidade</a>
+      </nav>
     </header>
 
-    <main>
+    <main id="conteudo">
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="hero-texto">
+          <span>Plataforma Educacional & Literária</span>
+          <h1>Transforme clássicos da literatura em conquistas.</h1>
+          <p>
+            A NEXA reconecta estudantes e vestibulandos às grandes obras
+            brasileiras através de tecnologia, missões gamificadas e preparação
+            estratégica para exames. Comece agora a explorar
+            <strong>Nebulosas (1872)</strong>, de Narcisa Amália.
+          </p>
+          <div
+            style="display: flex; gap: 15px; flex-wrap: wrap; margin-top: 25px"
+          >
+            <a href="experiencia.html" class="botao"
+              >Iniciar Jornada Gamificada</a
+            >
+            <a
+              href="sobre.html"
+              class="botao"
+              style="
+                background: transparent;
+                color: #18324d;
+                border: 2px solid #18324d;
+              "
+              >Explorar a Obra</a
+            >
+          </div>
+        </div>
 
-        <!-- HERO SECTION -->
-        <section class="hero">
-            <div class="hero-texto">
-                <span>Projeto Nebulosas</span>
-                <h1>Conectando literatura, inovação e futuro.</h1>
-                <h2>Uma iniciativa desenvolvida por estudantes do Ensino Médio para impactar a educação.</h2>
-                <p>
-                    O NEXA une tecnologia, gamificação e a riqueza da literatura brasileira em uma experiência de aprendizado interativa e transformadora.
-                </p>
-                <a href="projeto.html" class="botao">Conheça o Projeto</a>
-            </div>
+        <aside class="hero-card">
+          <div
+            style="
+              font-size: 13px;
+              color: #b39145;
+              font-weight: 600;
+              text-transform: uppercase;
+              margin-bottom: 8px;
+            "
+          >
+            Destaque da Temporada
+          </div>
+          <h3>Nebulosas — Narcisa Amália</h3>
+          <p>
+            Desbloqueie fases, responda a desafios literários sobre o
+            Romantismo, analise o protagonismo feminino no século XIX e
+            prepare-se para as provas da UNESP, Fuvest e Enem.
+          </p>
+        </aside>
+      </section>
 
-            <div class="hero-card">
-                <h3>Destaque do Projeto</h3>
-                <p>Descubra como estamos transformando a leitura e a escrita através da inovação e do engajamento juvenil.</p>
-            </div>
-        </section>
+      <!-- PILARES DO PRODUTO -->
+      <section>
+        <h2>Como a NEXA revoluciona seu aprendizado</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>🎮 Jornada Gamificada</h3>
+            <p>
+              Aprenda a literatura clássica jogando. Avance por fases, acumule
+              pontos, conquiste medalhas virtuais e acompanhe seu progresso em
+              tempo real.
+            </p>
+          </article>
 
-        <!-- PILARES / MISSÃO VISÃO VALORES -->
-        <section>
-            <h2>Nossos Pilares</h2>
-            <div class="cards">
-                <div class="card">
-                    <h3>Inovação</h3>
-                    <p>Uso de tecnologias acessíveis e metodologias ativas para despertar o interesse dos estudantes.</p>
-                </div>
-                <div class="card">
-                    <h3>Literatura</h3>
-                    <p>Valorização e redescoberta dos grandes clássicos e autores da literatura brasileira.</p>
-                </div>
-                <div class="card">
-                    <h3>Impacto Social</h3>
-                    <p>Transformação da realidade escolar por meio da inclusão digital e do conhecimento compartilhado.</p>
-                </div>
-            </div>
-        </section>
+          <article class="card">
+            <h3>📝 Foco nos Vestibulares</h3>
+            <p>
+              Simulados interativos inéditos, análise de vocabulário, figuras de
+              linguagem e guias de repertório sociocultural pronto para a sua
+              redação.
+            </p>
+          </article>
 
-        <!-- SOBRE / PROBLEMA -->
-        <section class="problema">
-            <div class="box">
-                <h2>O Desafio</h2>
-                <p>
-                    Aproximar os jovens da leitura tradicional exige novas abordagens. O projeto surge para construir caminhos dinâmicos entre o livro e o estudante.
-                </p>
-            </div>
-            <div class="box">
-                <h2>A Solução</h2>
-                <p>
-                    Uma plataforma gamificada com fases, desafios e conteúdos interativos que tornam o aprendizado envolvente e colaborativo.
-                </p>
-            </div>
-        </section>
+          <article class="card">
+            <h3>🌱 Conexão & Impacto Social</h3>
+            <p>
+              Relacionamos obras clássicas a problemas contemporâneos e aos ODS
+              da ONU, promovendo debate sobre equidade de gênero e
+              democratização da leitura.
+            </p>
+          </article>
+        </div>
+      </section>
 
-        <!-- FRASE FINAL / CTA -->
-        <section class="frase-final">
-            <h2>"Toda grande descoberta começa com uma nova ideia."</h2>
-            <p>Explore as etapas do nosso projeto e faça parte dessa jornada.</p>
-            <div>
-                <a href="experiencia.html" class="botao">Ver Experiência</a>
-            </div>
-        </section>
-
+      <!-- BANNER DE CHAMADA PARA A OBRA -->
+      <section
+        class="box"
+        style="
+          text-align: center;
+          background: linear-gradient(135deg, #ffffff 0%, #edf5fc 100%);
+          padding: 40px;
+        "
+      >
+        <h2>Pronto para a sua primeira conquista?</h2>
+        <p style="max-width: 650px; margin: 10px auto 25px auto">
+          Mergulhe nos poemas de Narcisa Amália, entenda o contexto histórico de
+          1872 e veja como essa voz pioneira continua atual.
+        </p>
+        <a href="vestibular.html" class="botao"
+          >Testar Conhecimentos no Simulado</a
+        >
+      </section>
     </main>
 
     <footer>
-        <p>NEXA | Projeto Nebulosas</p>
+      <p>
+        &copy; 2026 NEXA — Plataforma de Leitura Gamificada. Todos os direitos
+        reservados.
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>

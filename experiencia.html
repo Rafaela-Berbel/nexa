@@ -1,311 +1,612 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Arena Gamificada NEXA: Jogue a jornada interativa pelas Nebulosas de Narcisa Amália. Ganhe pontos, desbloqueie medalhas e domine a literatura clássica para o vestibular."
+    />
+    <title>Nexa | O Game Interativo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
 
-<head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>NEXA | Experiência Gamificada</title>
-
-    <link rel="stylesheet" href="style.css">
-
-</head>
-
-
-<body>
-
-
-<header>
-
-    <div class="logo">
-        <img src="imagens/logo.jpeg" alt="Logo NEXA">
-    </div>
-
-
-    <nav>
-
+    <header>
+      <div class="logo">
+        <a href="index.html"><img src="imagens/logo.jpeg" alt="Logo NEXA" /></a>
+      </div>
+      <nav aria-label="Navegação principal">
         <a href="index.html">Início</a>
-        <a href="sobre.html">Sobre</a>
-        <a href="projeto.html">Projeto</a>
-        <a href="experiencia.html">Experiência</a>
-        <a href="equipe.html">Equipe</a>
-        <a href="contato.html">Contato</a>
+        <a href="sobre.html">A Obra</a>
+        <a href="projeto.html">A Startup</a>
+        <a href="experiencia.html" class="ativo" aria-current="page">O Game</a>
+        <a href="vestibular.html">Vestibular</a>
+        <a href="equipe.html">Quem Somos</a>
+        <a href="contato.html">Comunidade</a>
+      </nav>
+    </header>
 
-    </nav>
+    <main id="conteudo">
+      <!-- HERO DA PÁGINA -->
+      <section class="pagina">
+        <span>Plataforma de Aprendizagem Interativa</span>
+        <h1>Jornada pelas Nebulosas</h1>
+        <p>
+          Embarque na experiência gamificada da NEXA: explore os poemas de
+          Narcisa Amália (1872), desvende figuras de linguagem, supere desafios
+          literários e acumule pontos para desbloquear conquistas exclusivas.
+        </p>
+        <p style="margin-top: 16px">
+          <a class="botao" href="#arena-jogo">Jogar Agora</a>
+        </p>
+      </section>
 
-</header>
+      <!-- ARENA DO JOGO FUNCIONAL -->
+      <section id="arena-jogo">
+        <h2>🎮 Arena do Jogo</h2>
+        <p class="intro-secao">
+          Responda às questões da jornada para reacender as estrelas da
+          literatura e conquistar o topo do ranking.
+        </p>
 
+        <div class="box" style="border-top: 4px solid #d6b86a; padding: 25px">
+          <!-- BARRA DE STATUS DO JOGO -->
+          <div
+            style="
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              flex-wrap: wrap;
+              gap: 15px;
+              background: #edf5fc;
+              padding: 15px 20px;
+              border-radius: 12px;
+              margin-bottom: 25px;
+            "
+          >
+            <div>
+              <span
+                style="
+                  font-size: 13px;
+                  text-transform: uppercase;
+                  color: #b39145;
+                  font-weight: 600;
+                "
+                >Fase Atual</span
+              ><br /><strong
+                id="game-fase-txt"
+                style="color: #18324d; font-size: 18px"
+                >Fase 1: Origem da Estrela</strong
+              >
+            </div>
+            <div>
+              <span
+                style="
+                  font-size: 13px;
+                  text-transform: uppercase;
+                  color: #b39145;
+                  font-weight: 600;
+                "
+                >Pontuação</span
+              ><br /><strong
+                id="game-score"
+                style="color: #18324d; font-size: 22px"
+                >0 pts</strong
+              >
+            </div>
+            <div>
+              <span
+                style="
+                  font-size: 13px;
+                  text-transform: uppercase;
+                  color: #b39145;
+                  font-weight: 600;
+                "
+                >Combo Sequencial</span
+              ><br /><strong
+                id="game-streak"
+                style="color: #18324d; font-size: 18px"
+                >🔥 0x</strong
+              >
+            </div>
+            <div>
+              <span
+                style="
+                  font-size: 13px;
+                  text-transform: uppercase;
+                  color: #b39145;
+                  font-weight: 600;
+                "
+                >Medalhas</span
+              ><br /><span id="game-badges">⚪ ⚪ ⚪</span>
+            </div>
+          </div>
 
+          <!-- CONTAINER DA PERGUNTA -->
+          <div id="game-container">
+            <div id="question-card">
+              <span
+                id="question-category"
+                style="
+                  font-size: 12px;
+                  background: #18324d;
+                  color: white;
+                  padding: 4px 10px;
+                  border-radius: 20px;
+                  font-weight: 500;
+                "
+                >Contexto Histórico</span
+              >
+              <h3
+                id="question-title"
+                style="margin-top: 15px; color: #18324d; font-size: 20px"
+              >
+                Carregando pergunta...
+              </h3>
 
+              <blockquote
+                id="question-quote"
+                style="
+                  background: #f8fbff;
+                  border-left: 4px solid #d6b86a;
+                  padding: 12px 18px;
+                  margin: 15px 0;
+                  font-style: italic;
+                  color: #18324d;
+                  display: none;
+                "
+              >
+                ""
+              </blockquote>
 
+              <div
+                id="options-container"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 12px;
+                  margin-top: 20px;
+                "
+              >
+                <!-- Opções renderizadas dinamicamente pelo JS -->
+              </div>
 
-<main>
+              <!-- FEEDBACK EM TEMPO REAL -->
+              <div
+                id="feedback-box"
+                style="
+                  display: none;
+                  margin-top: 20px;
+                  padding: 15px;
+                  border-radius: 12px;
+                  line-height: 1.5;
+                  font-size: 15px;
+                "
+              >
+                <!-- Texto de feedback -->
+              </div>
 
+              <button
+                id="next-btn"
+                onclick="nextQuestion()"
+                class="botao"
+                style="display: none; margin-top: 20px"
+              >
+                Próximo Desafio ➔
+              </button>
+            </div>
 
+            <!-- TELA DE VITÓRIA / FINALIZAÇÃO (INICIALMENTE OCULTA) -->
+            <div
+              id="game-over-screen"
+              style="display: none; text-align: center; padding: 30px 10px"
+            >
+              <span style="font-size: 60px">🏆</span>
+              <h2 style="color: #18324d; margin-top: 10px">
+                Jornada Concluída com Sucesso!
+              </h2>
+              <p
+                id="final-stats"
+                style="font-size: 18px; color: #53677a; margin: 15px 0"
+              >
+                Você acumulou 0 pontos e reacendeu todas as estrelas de
+                Nebulosas.
+              </p>
 
-<section class="pagina">
+              <div
+                id="final-badges-container"
+                style="
+                  margin: 20px 0;
+                  padding: 20px;
+                  background: #f8fbff;
+                  border-radius: 16px;
+                "
+              >
+                <h4 style="color: #b39145; margin-bottom: 10px">
+                  Medalhas Desbloqueadas:
+                </h4>
+                <div
+                  id="final-badges-list"
+                  style="
+                    display: flex;
+                    justify-content: center;
+                    gap: 15px;
+                    flex-wrap: wrap;
+                    font-weight: 600;
+                    color: #18324d;
+                  "
+                >
+                  <!-- Lista de conquistas -->
+                </div>
+              </div>
 
-
-    <span>
-        Experiência interativa
-    </span>
-
-
-    <h1>
-        Uma jornada pelas Nebulosas
-    </h1>
-
-
-    <p>
-
-        A experiência gamificada transforma o contato
-        com a literatura em uma jornada de descoberta.
-
-        O usuário explora a obra de Narcisa Amália,
-        supera desafios e conecta os conhecimentos
-        adquiridos com questões da sociedade atual.
-
-    </p>
-
-
-</section>
-
-
-
-
-
-
-
-<section class="jornada">
-
-
-    <h2>
-        Como funciona?
-    </h2>
-
-
-
-    <p>
-
-        A jornada é dividida em etapas que representam
-        diferentes momentos de aprendizado.
-
-        Cada fase apresenta novos conteúdos,
-        desafios e reflexões.
-
-    </p>
-
-
-
-    <div class="fases">
-
-
-
-
-
-        <div class="fase">
-
-
-            <h3>
-                ⭐ Fase 1 — Origem da Estrela
-            </h3>
-
-
-            <p>
-
-                Conhecendo Narcisa Amália, sua trajetória
-                e o contexto histórico em que viveu.
-
-            </p>
-
-
+              <button
+                onclick="restartGame()"
+                class="botao"
+                style="margin-top: 15px"
+              >
+                Jogar Novamente
+              </button>
+            </div>
+          </div>
         </div>
+      </section>
 
-
-
-
-
-
-        <div class="fase">
-
-
-            <h3>
-                🌌 Fase 2 — Explorando Nebulosas
-            </h3>
-
-
+      <!-- REGULAMENTO E ESTRUTURA DAS FASES -->
+      <section class="jornada">
+        <h2>Estrutura da Jornada de Aprendizagem</h2>
+        <div class="fases" style="margin-top: 24px">
+          <div class="fase">
+            <h3>⭐ Fase 1 — Origem da Estrela</h3>
             <p>
-
-                Interpretação dos poemas, identificação
-                dos temas principais e desafios literários.
-
+              <strong>Contexto & Autora:</strong> Análise da vida de Narcisa
+              Amália, o meio intelectual do século XIX e o pioneirismo feminino
+              na imprensa de 1872.
             </p>
-
-
-        </div>
-
-
-
-
-
-
-        <div class="fase">
-
-
-            <h3>
-                ✨ Fase 3 — Novas Constelações
-            </h3>
-
-
+          </div>
+          <div class="fase">
+            <h3>🌌 Fase 2 — Explorando Nebulosas</h3>
             <p>
-
-                O estudante relaciona as ideias da obra
-                com problemas e reflexões do presente.
-
+              <strong>Estética & Linguagem:</strong> Identificação de figuras de
+              linguagem (metáforas, personificações, antíteses) e lirismo
+              romântico nos poemas da obra.
             </p>
-
-
-        </div>
-
-
-
-    </div>
-
-
-</section>
-
-
-
-
-
-
-
-
-<section class="mecanicas">
-
-
-    <h2>
-        Elementos da gamificação
-    </h2>
-
-
-
-    <div class="cards">
-
-
-
-        <div class="card">
-
-
-            <h3>
-                🏆 Pontuação
-            </h3>
-
-
+          </div>
+          <div class="fase">
+            <h3>✨ Fase 3 — Novas Constelações</h3>
             <p>
-
-                Cada atividade concluída gera pontos
-                durante a jornada.
-
+              <strong>Atualização & Vestibular:</strong> Conexão temática com os
+              ODS (Educação e Igualdade de Gênero) e aplicação prática para
+              redações e simulados.
             </p>
-
-
+          </div>
         </div>
+      </section>
 
-
-
-
-
-        <div class="card">
-
-
-            <h3>
-                🎖 Conquistas
-            </h3>
-
-
+      <!-- SISTEMA DE RECOMPENSAS -->
+      <section class="mecanicas">
+        <h2>Elementos da Gamificação NEXA</h2>
+        <div class="cards">
+          <article class="card">
+            <h3>🏆 Pontuação & Combos</h3>
             <p>
-
-                O usuário desbloqueia medalhas ao
-                completar desafios.
-
+              Acertos diretos somam 10 pontos. Respostas corretas consecutivas
+              ativam multiplicadores de combo e bônus de pontos extras.
             </p>
-
-
-        </div>
-
-
-
-
-
-        <div class="card">
-
-
-            <h3>
-                🔭 Exploração
-            </h3>
-
-
+          </article>
+          <article class="card">
+            <h3>🎖 Conquistas Desbloqueáveis</h3>
             <p>
-
-                A aprendizagem acontece através de
-                descobertas e novas conexões.
-
+              Conclua as etapas para conquistar os selos
+              <em>Astro Nascente</em> (Fase 1),
+              <em>Poeta das Nebulosas</em> (Fase 2) e
+              <em>Constelação Narcisa</em> (Fase 3).
             </p>
-
-
+          </article>
+          <article class="card">
+            <h3>💡 Feedback Pedagógico</h3>
+            <p>
+              Cada alternativa escolhida apresenta uma explicação explicativa
+              imediata com justificativa literária baseada nos exames oficiais.
+            </p>
+          </article>
         </div>
+      </section>
 
+      <!-- BANNER DE CHAMADA -->
+      <section
+        class="box"
+        style="text-align: center; background: white; padding: 40px"
+      >
+        <h2>Quer testar seus conhecimentos em nível de prova real?</h2>
+        <p style="max-width: 600px; margin: 10px auto 20px auto">
+          Acesse nossa central de vestibulares com simulados de questões
+          inéditas da UNESP/Fuvest e guia de repertório para redação.
+        </p>
+        <a href="vestibular.html" class="botao"
+          >Ir para Simulados do Vestibular</a
+        >
+      </section>
+    </main>
 
-    </div>
+    <footer>
+      <p>
+        &copy; 2026 NEXA — Plataforma de Leitura Gamificada. Todos os direitos
+        reservados.
+      </p>
+    </footer>
 
+    <!-- SCRIPT DO JOGO INTERATIVO -->
+    <script>
+      const questions = [
+        {
+          phase: "Fase 1: Origem da Estrela",
+          category: "Contexto Histórico (1872)",
+          title:
+            "Publicado em 1872, o livro 'Nebulosas' marcou a literatura brasileira por qual razão principal?",
+          quote: null,
+          options: [
+            {
+              text: "A) Foi a primeira obra brasileira a adotar o modelo do Parnasianismo rigoroso.",
+              correct: false,
+              feedback:
+                "Incorreto. Em 1872 o Parnasianismo ainda não havia sido introduzido no Brasil. A obra pertence ao Romantismo."
+            },
+            {
+              text: "B) Inovou ao trazer a voz de uma mulher defendendo liberdade, educação e igualdade em pleno século XIX.",
+              correct: true,
+              feedback:
+                "Correto! Narcisa Amália usou sua poesia como instrumento de crítica social, defesa da emancipação feminina e acesso à educação."
+            },
+            {
+              text: "C) Trata-se de um manifesto científico sobre astronomia escrito na época do Império.",
+              correct: false,
+              feedback:
+                "Incorreto. 'Nebulosas' é um livro poético de sensibilidade romântica e tom social, não um tratado científico."
+            }
+          ],
+          badge: "⭐ Astro Nascente"
+        },
+        {
+          phase: "Fase 2: Explorando Nebulosas",
+          category: "Figuras de Linguagem",
+          title:
+            "Análise o verso do poema 'Amargura'. Qual figura de linguagem se destaca?",
+          quote: "“O mundo que me vê passar sem um sorriso…”",
+          options: [
+            {
+              text: "A) Antítese",
+              correct: false,
+              feedback:
+                "Incorreto. Antítese exige aproximação de termos opostos (ex: luz e sombra). O verso atribui ações humanas ao 'mundo'."
+            },
+            {
+              text: "B) Personificação (Prosopopeia)",
+              correct: true,
+              feedback:
+                "Exato! Ao atribuir a capacidade de 'ver' e 'sorrir' ao elemento abstrato 'mundo', a autora emprega a personificação."
+            },
+            {
+              text: "C) Onomatopeia",
+              correct: false,
+              feedback:
+                "Incorreto. Onomatopeia consiste na imitação gráfica de sons naturais, o que não ocorre no verso citado."
+            }
+          ],
+          badge: null
+        },
+        {
+          phase: "Fase 2: Explorando Nebulosas",
+          category: "Estética Literária",
+          title:
+            "Leia o trecho de 'Desalento'. A intensa expressividade de dor e sofrimento amoroso dialoga com qual vertente romântica?",
+          quote:
+            "“Tenho a alma de dores saturada / E o coração de pranto e angústia cheio…”",
+          options: [
+            {
+              text: "A) 1ª Geração Romântica (Nacionalista / Indianista)",
+              correct: false,
+              feedback:
+                "Incorreto. A 1ª geração tinha foco na construção da identidade nacional e na exaltação da natureza patria."
+            },
+            {
+              text: "B) 2ª Geração Romântica (Ultrarromantismo / Mal do Século)",
+              correct: true,
+              feedback:
+                "Correto! O tom intimista, a melancolia e o lirismo centrado na dor sentimental são marcas registradas da 2ª geração romântica."
+            },
+            {
+              text: "C) 3ª Geração Romântica (Condoreira / Social)",
+              correct: false,
+              feedback:
+                "Incorreto. Embora Narcisa Amália tenha poemas sociais condoreiros, este trecho em específico expressa o sofrimento lírico da 2ª fase."
+            }
+          ],
+          badge: "🌌 Poeta das Nebulosas"
+        },
+        {
+          phase: "Fase 3: Novas Constelações",
+          category: "Atualização & ODS",
+          title:
+            "Como a reflexão de Narcisa Amália sobre a autonomia feminina se conecta com os Objetivos de Desenvolvimento Sustentável (ODS) da ONU?",
+          quote: null,
+          options: [
+            {
+              text: "A) Dialoga diretamente com o ODS 5 (Igualdade de Gênero) e o ODS 4 (Educação de Qualidade).",
+              correct: true,
+              feedback:
+                "Perfeito! A defesa da mulher como agente de transformação e o direito ao conhecimento relacionam-se diretamente com as metas dos ODS 4 e 5."
+            },
+            {
+              text: "B) Relaciona-se exclusivamente com a preservação marinha do ODS 14.",
+              correct: false,
+              feedback:
+                "Incorreto. A temática central da autora é social, educacional e de direitos humanos."
+            },
+            {
+              text: "C) Não possui relação com problemas do século XXI, limitando-se ao ano de 1872.",
+              correct: false,
+              feedback:
+                "Incorreto. Os temas de equidade e acesso à leitura permanecem desafios fundamentais na sociedade atual."
+            }
+          ],
+          badge: "✨ Constelação Narcisa"
+        }
+      ];
 
-</section>
+      let currentQ = 0;
+      let score = 0;
+      let streak = 0;
+      let unlockedBadges = [];
+      let answered = false;
 
+      function renderQuestion() {
+        answered = false;
+        const q = questions[currentQ];
 
+        document.getElementById("game-fase-txt").innerText = q.phase;
+        document.getElementById("question-category").innerText = q.category;
+        document.getElementById("question-title").innerText = q.title;
 
+        const quoteEl = document.getElementById("question-quote");
+        if (q.quote) {
+          quoteEl.innerText = q.quote;
+          quoteEl.style.display = "block";
+        } else {
+          quoteEl.style.display = "none";
+        }
 
+        const optionsContainer = document.getElementById("options-container");
+        optionsContainer.innerHTML = "";
 
+        q.options.forEach((opt, idx) => {
+          const btn = document.createElement("button");
+          btn.className = "card";
+          btn.style.textAlign = "left";
+          btn.style.cursor = "pointer";
+          btn.style.padding = "14px 18px";
+          btn.style.fontSize = "15px";
+          btn.style.fontWeight = "500";
+          btn.style.color = "#18324d";
+          btn.style.transition = "0.2s";
+          btn.innerText = opt.text;
+          btn.onclick = () => selectOption(idx, btn);
+          optionsContainer.appendChild(btn);
+        });
 
+        document.getElementById("feedback-box").style.display = "none";
+        document.getElementById("next-btn").style.display = "none";
+      }
 
-<section class="experiencia-final">
+      function selectOption(idx, buttonEl) {
+        if (answered) return;
+        answered = true;
 
+        const q = questions[currentQ];
+        const selected = q.options[idx];
+        const feedbackBox = document.getElementById("feedback-box");
+        const optionsBtns =
+          document.getElementById("options-container").children;
 
-    <h2>
-        Aprender também pode ser uma descoberta
-    </h2>
+        // Desabilita botões
+        for (let btn of optionsBtns) {
+          btn.style.cursor = "default";
+        }
 
+        if (selected.correct) {
+          score += 10 + streak * 2;
+          streak++;
+          buttonEl.style.background = "#e6f4ea";
+          buttonEl.style.borderColor = "#34a853";
 
-    <p>
+          feedbackBox.style.display = "block";
+          feedbackBox.style.background = "#e6f4ea";
+          feedbackBox.style.color = "#137333";
+          feedbackBox.innerHTML =
+            "<strong>✅ Resposta Correta!</strong> " + selected.feedback;
 
-        A NEXA transforma a leitura em uma viagem
-        pelo conhecimento, mostrando que cada ideia
-        pode formar uma nova constelação.
+          if (q.badge && !unlockedBadges.includes(q.badge)) {
+            unlockedBadges.push(q.badge);
+          }
+        } else {
+          streak = 0;
+          buttonEl.style.background = "#fce8e6";
+          buttonEl.style.borderColor = "#ea4335";
 
-    </p>
+          feedbackBox.style.display = "block";
+          feedbackBox.style.background = "#fce8e6";
+          feedbackBox.style.color = "#c5221f";
+          feedbackBox.innerHTML =
+            "<strong>❌ Alternativa Incorreta.</strong> " + selected.feedback;
+        }
 
+        updateStatus();
+        document.getElementById("next-btn").style.display = "inline-block";
+      }
 
-</section>
+      function updateStatus() {
+        document.getElementById("game-score").innerText = score + " pts";
+        document.getElementById("game-streak").innerText = "🔥 " + streak + "x";
 
+        let badgeDisplay = "";
+        if (unlockedBadges.length === 0) badgeDisplay = "⚪ ⚪ ⚪";
+        else badgeDisplay = unlockedBadges.join(" ");
 
+        document.getElementById("game-badges").innerText = badgeDisplay;
+      }
 
-</main>
+      function nextQuestion() {
+        currentQ++;
+        if (currentQ < questions.length) {
+          renderQuestion();
+        } else {
+          showGameOver();
+        }
+      }
 
+      function showGameOver() {
+        document.getElementById("question-card").style.display = "none";
+        const gameOverScreen = document.getElementById("game-over-screen");
+        gameOverScreen.style.display = "block";
 
+        document.getElementById("final-stats").innerText =
+          `Você somou um total de ${score} pontos e completou todas as etapas da jornada!`;
 
+        const badgesList = document.getElementById("final-badges-list");
+        if (unlockedBadges.length > 0) {
+          badgesList.innerHTML = unlockedBadges
+            .map(
+              (b) =>
+                `<span style="background: #edf5fc; padding: 8px 15px; border-radius: 20px; border: 1px solid #d6b86a;">${b}</span>`
+            )
+            .join("");
+        } else {
+          badgesList.innerHTML =
+            "<span>Nenhuma medalha conquistada nesta rodada. Tente novamente!</span>";
+        }
+      }
 
+      function restartGame() {
+        currentQ = 0;
+        score = 0;
+        streak = 0;
+        unlockedBadges = [];
+        updateStatus();
+        document.getElementById("game-over-screen").style.display = "none";
+        document.getElementById("question-card").style.display = "block";
+        renderQuestion();
+      }
 
-<footer>
-
-    <p>
-        NEXA | Projeto Nebulosas
-    </p>
-
-</footer>
-
-
-
-</body>
-
+      // Inicializa o jogo ao carregar a página
+      window.onload = renderQuestion;
+    </script>
+  </body>
 </html>
